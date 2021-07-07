@@ -43,6 +43,7 @@
     [fit-to-page]="false" (after-load-complete)="afterLoadComplete($event)" style="display: block;">
   </pdf-viewer>
 </div>
-<div class="img-container">
+
+<div class="img-container" [hidden]="!isCropImage" >
   <img #image src="" id="cropper-img" crossorigin>
 </div>
