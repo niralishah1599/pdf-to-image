@@ -40,10 +40,10 @@
 
 <div class="pdf-container top-margin" [hidden]="isCropImage">
   <pdf-viewer [src]="pdfSrc" [render-text]="true" [page]="currentpage" [show-all]="false" [original-size]="true"
-    [fit-to-page]="false" (after-load-complete)="afterLoadComplete($event)" style="display: block;">
+    [fit-to-page]="false" (after-load-complete)="afterLoadComplete($event)" style="display: block; width: fit-content;">
   </pdf-viewer>
 </div>
 
-<div class="img-container" [hidden]="!isCropImage" >
+<div class="img-container" [hidden]="!isCropImage">
   <img #image src="" id="cropper-img" crossorigin>
 </div>
